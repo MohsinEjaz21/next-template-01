@@ -1,0 +1,279 @@
+:root {
+  --tt-base: 10;
+  --nav-height: 70px;
+
+  // LIGHT COLORS
+  // --color-dark: #1d1d1d;
+
+  --color-dark: #0d182c;
+  --color-light: #ffffff;
+  --color-1: #f42352;
+  --color-2: rgb(25, 65, 47);
+
+  --color-gradient: linear-gradient(82.3deg, var(--color-1) 10.8%, var(--color-2) 94.3%);
+
+  // custom variables
+  --font-family_1: "IBM Plex Sans", "Raleway", "Roboto", sans-serif;
+  --box-shadow-light: var(--color-light) 0px 0px 1px 0px;
+  --box-shadow-dark: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  --arrow-color: var(--color-dark);
+  --body-bg: linear-gradient(176deg, rgb(18, 24, 27) 50%, rgb(32, 39, 55) 100%);
+  --transition: all 0.2s ease-in-out;
+  --box-shadow: var(--color-dark) 0px 0px 1px 0px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  // background: rgb(0 100 0 / 0.1) !important;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+html {
+  width: 100%;
+  font-size: 62.5%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: var(--font-family_1);
+  word-wrap: break-word;
+}
+
+body {
+  // background: var(--body-bg);
+  --nav-height: 70px;
+  @include maxMedia(1025px) {
+    --nav-height: 65px;
+  }
+  &.dark {
+    --color-dark: #ffffff;
+    --color-light: #000000;
+    --box-shadow: var(--box-shadow-light);
+  }
+}
+
+main {
+  &:before {
+    width: 100%;
+    display: block;
+    height: calc(var(--nav-height) + 10px);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+::-webkit-scrollbar-thumb {
+  background: transparent !important;
+}
+
+.dark-overlay {
+  content: "";
+  position: fixed;
+  background: rgb(1, 1, 1, 0.7);
+  top: 0px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.w-700 {
+  font-weight: 700;
+}
+
+.w-300 {
+  font-weight: 200;
+}
+
+.w-500 {
+  font-weight: 500;
+}
+
+.w-600 {
+  font-weight: 600;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+}
+
+.icon {
+  max-width: 2.4rem;
+  max-height: 2.4rem;
+}
+
+.underline {
+  text-decoration: underline;
+}
+#root {
+  // max-width: 1440px;
+  margin: 0 auto;
+  // background-color: var(--color-bg-image);
+}
+
+section {
+  max-width: 2550px;
+  margin: 0 auto;
+  // margin-bottom: 8rem !important;
+}
+
+.u-block-1 {
+  width: 70%;
+
+  @include xs {
+    width: 90%;
+  }
+  @include tn {
+    width: 95%;
+  }
+}
+
+// &&&&&&&&&&&&&&&
+//  Typetura
+// &&&&&&&&&&&&&&&
+.h-large,
+.h-medium,
+.h-regular,
+.h-small {
+  --tt-ease: ease-out;
+  --tt-max: 1440;
+  color: var(--color-dark);
+  font-family: var(--font-family_1);
+}
+
+.h-large {
+  font-weight: 600;
+  --tt-key: heading-large;
+}
+
+.h-medium {
+  font-weight: 600;
+  --tt-key: heading-medium;
+}
+
+.h-regular {
+  font-weight: 500;
+  --tt-key: heading-regular;
+}
+
+.h-small {
+  font-weight: 400;
+  --tt-key: heading-small;
+  line-height: 150%;
+}
+
+.paragraph {
+  font-weight: 400;
+  line-height: 150%;
+  font-family: var(--font-family_1);
+  font-size: 1.8rem;
+  color: var(--color-dark);
+  // --tt-key: paragraph;
+}
+
+.paragraph-light {
+  @extend .paragraph;
+  color: var(--color-light);
+  opacity: 0.75;
+}
+
+.btn {
+  font-family: var(--font-family_1);
+  font-size: 1.5rem;
+  max-width: 253px;
+  text-align: center;
+  @include xs {
+    min-width: 130px;
+    max-width: none;
+  }
+  @include tn {
+    min-width: 100px;
+  }
+}
+
+@keyframes heading-large {
+  22% {
+    font-size: 2.5rem;
+  }
+  70% {
+    font-size: 3rem;
+  }
+  100% {
+    font-size: 4.8rem;
+  }
+}
+
+@keyframes heading-medium {
+  22% {
+    font-size: 2.05rem;
+  }
+  70% {
+    font-size: 2.8rem;
+  }
+  100% {
+    font-size: 3.6rem;
+  }
+}
+
+@keyframes heading-regular {
+  22% {
+    font-size: 2rem;
+  }
+  70% {
+    font-size: 2.8rem;
+  }
+  100% {
+    font-size: 3rem;
+  }
+}
+
+@keyframes heading-small {
+  22% {
+    font-size: 2rem;
+  }
+  70% {
+    font-size: 2.8rem;
+  }
+  100% {
+    font-size: 3rem;
+  }
+}
+
+@keyframes paragraph {
+  22% {
+    font-size: 1.8rem;
+  }
+  70% {
+    font-size: 1.8rem;
+  }
+  100% {
+    font-size: 1.8rem;
+  }
+}
+
+@include media(1920px) {
+  .h-large {
+    font-size: 6.2rem !important;
+  }
+  .h-medium {
+    font-size: 4.8rem !important;
+  }
+  .h-regular {
+    font-size: 3.2rem !important;
+  }
+  .h-small {
+    font-size: 2.5rem !important;
+  }
+  .paragraph {
+    font-size: 2.5rem !important;
+  }
+}
