@@ -76,7 +76,7 @@
 
   &.fixed-nav {
     top: 0px;
-    position: fixed;
+    position: sticky;
     background: var(--color-light);
     width: 100%;
   }
