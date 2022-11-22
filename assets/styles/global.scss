@@ -23,9 +23,9 @@
 
 html {
   // width: 100%;
-  font-size: min(max(1rem, 4vw), 22px);
-  overflow-y: scroll;
-  overflow-x: hidden;
+  font-size: min(max(1rem, 4vw), 18px);
+  // overflow-y: scroll;
+  // overflow-x: hidden;
   font-family: var(--font-family_1);
   word-wrap: break-word;
 }
@@ -44,11 +44,11 @@ body {
 }
 
 main {
-  &:before {
-    width: 100%;
-    display: block;
-    height: calc(var(--nav-height) + 10px);
-  }
+  // &:before {
+  //   width: 100%;
+  //   display: block;
+  //   height: calc(var(--nav-height) + 10px);
+  // }
 }
 
 ::-webkit-scrollbar {

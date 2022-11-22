@@ -290,7 +290,6 @@
 
         &:before {
           transition: var(--transition);
-          // clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
           clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
           bottom: 0px;
           box-sizing: border-box;
@@ -300,12 +299,16 @@
           visibility: visible;
           width: calc(100% - 30px);
           background-repeat: no-repeat;
-          // background-image: url("/assets/icons/underline.svg");
-          // background-image: url("https://raw.githubusercontent.com/MohsinEjaz21/next-static-export-menu/main/public/assets/icons/underline.svg");
+          background-size: 100%;
           @extend .h-center-abs;
           background-color: var(--color-dark);
           mask-image: url("https://raw.githubusercontent.com/MohsinEjaz21/next-static-export-menu/main/public/assets/icons/underline.svg");
-          // @include recolor(#1d1d1d, 1);
+          // object-fit: scale-down;
+          // clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+          // background-image: url("/assets/icons/underline.svg");
+          // background-image: url("https://raw.githubusercontent.com/MohsinEjaz21/next-static-export-menu/main/public/assets/icons/underline.svg");
+          // @include recolor(black, 100%);
+          // filter: invert(0%) sepia(0%) saturate(17%) hue-rotate(324deg) brightness(102%) contrast(105%);
           // @include recolor(#1d1d1d, 0.8);
         }
       }
