@@ -1,5 +1,4 @@
 :root {
-  --tt-base: 10;
   --nav-height: 70px;
 
   // LIGHT COLORS
@@ -23,10 +22,7 @@
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  // background: rgb(0 100 0 / 0.1) !important;
+  background: rgb(0 100 0 / 0.1) !important;
 }
 
 button,
@@ -36,7 +32,7 @@ a {
 
 html {
   width: 100%;
-  font-size: 62.5%;
+  font-size: min(max(1rem, 4vw), 22px);
   overflow-y: scroll;
   overflow-x: hidden;
   font-family: var(--font-family_1);
@@ -71,15 +67,15 @@ main {
   background: transparent !important;
 }
 
-.dark-overlay {
-  content: "";
-  position: fixed;
-  background: rgb(1, 1, 1, 0.7);
-  top: 0px;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
+// .dark-overlay {
+//   content: "";
+//   position: fixed;
+//   background: rgb(1, 1, 1, 0.7);
+//   top: 0px;
+//   left: 0;
+//   height: 100%;
+//   width: 100%;
+// }
 
 .w-700 {
   font-weight: 700;
@@ -134,146 +130,5 @@ section {
   }
   @include tn {
     width: 95%;
-  }
-}
-
-// &&&&&&&&&&&&&&&
-//  Typetura
-// &&&&&&&&&&&&&&&
-.h-large,
-.h-medium,
-.h-regular,
-.h-small {
-  --tt-ease: ease-out;
-  --tt-max: 1440;
-  color: var(--color-dark);
-  font-family: var(--font-family_1);
-}
-
-.h-large {
-  font-weight: 600;
-  --tt-key: heading-large;
-}
-
-.h-medium {
-  font-weight: 600;
-  --tt-key: heading-medium;
-}
-
-.h-regular {
-  font-weight: 500;
-  --tt-key: heading-regular;
-}
-
-.h-small {
-  font-weight: 400;
-  --tt-key: heading-small;
-  line-height: 150%;
-}
-
-.paragraph {
-  font-weight: 400;
-  line-height: 150%;
-  font-family: var(--font-family_1);
-  font-size: 1.8rem;
-  color: var(--color-dark);
-  // --tt-key: paragraph;
-}
-
-.paragraph-light {
-  @extend .paragraph;
-  color: var(--color-light);
-  opacity: 0.75;
-}
-
-.btn {
-  font-family: var(--font-family_1);
-  font-size: 1.5rem;
-  max-width: 253px;
-  text-align: center;
-  @include xs {
-    min-width: 130px;
-    max-width: none;
-  }
-  @include tn {
-    min-width: 100px;
-  }
-}
-
-@keyframes heading-large {
-  22% {
-    font-size: 2.5rem;
-  }
-  70% {
-    font-size: 3rem;
-  }
-  100% {
-    font-size: 4.8rem;
-  }
-}
-
-@keyframes heading-medium {
-  22% {
-    font-size: 2.05rem;
-  }
-  70% {
-    font-size: 2.8rem;
-  }
-  100% {
-    font-size: 3.6rem;
-  }
-}
-
-@keyframes heading-regular {
-  22% {
-    font-size: 2rem;
-  }
-  70% {
-    font-size: 2.8rem;
-  }
-  100% {
-    font-size: 3rem;
-  }
-}
-
-@keyframes heading-small {
-  22% {
-    font-size: 2rem;
-  }
-  70% {
-    font-size: 2.8rem;
-  }
-  100% {
-    font-size: 3rem;
-  }
-}
-
-@keyframes paragraph {
-  22% {
-    font-size: 1.8rem;
-  }
-  70% {
-    font-size: 1.8rem;
-  }
-  100% {
-    font-size: 1.8rem;
-  }
-}
-
-@include media(1920px) {
-  .h-large {
-    font-size: 6.2rem !important;
-  }
-  .h-medium {
-    font-size: 4.8rem !important;
-  }
-  .h-regular {
-    font-size: 3.2rem !important;
-  }
-  .h-small {
-    font-size: 2.5rem !important;
-  }
-  .paragraph {
-    font-size: 2.5rem !important;
   }
 }
