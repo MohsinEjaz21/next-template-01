@@ -1,9 +1,5 @@
 :root {
   --nav-height: 70px;
-
-  // LIGHT COLORS
-  // --color-dark: #1d1d1d;
-
   --color-dark: #0d182c;
   --color-light: #ffffff;
   --color-1: #f42;
@@ -22,16 +18,11 @@
 }
 
 * {
-  background: rgb(0 100 0 / 0.1) !important;
-}
-
-button,
-a {
-  cursor: pointer;
+  // background: rgb(0 100 0 / 0.1) !important;
 }
 
 html {
-  width: 100%;
+  // width: 100%;
   font-size: min(max(1rem, 4vw), 22px);
   overflow-y: scroll;
   overflow-x: hidden;
@@ -66,16 +57,6 @@ main {
 ::-webkit-scrollbar-thumb {
   background: transparent !important;
 }
-
-// .dark-overlay {
-//   content: "";
-//   position: fixed;
-//   background: rgb(1, 1, 1, 0.7);
-//   top: 0px;
-//   left: 0;
-//   height: 100%;
-//   width: 100%;
-// }
 
 .w-700 {
   font-weight: 700;
@@ -132,3 +113,13 @@ section {
     width: 95%;
   }
 }
+
+// .dark-overlay {
+//   content: "";
+//   position: fixed;
+//   background: rgb(1, 1, 1, 0.7);
+//   top: 0px;
+//   left: 0;
+//   height: 100%;
+//   width: 100%;
+// }
