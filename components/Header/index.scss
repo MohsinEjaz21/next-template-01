@@ -67,10 +67,13 @@
   }
 
   .border-top {
-    left: 18px;
-    width: calc(100% - 30px);
+    // left: 18px;
+    width: 100%;
+    // width: calc(100% - 30px);
     height: 1px;
-    top: 55.39px;
+    background-color: var(--color-dark);
+    opacity: 0.4;
+    top: 62px;
     @extend .custom-border;
   }
 
@@ -141,7 +144,7 @@
       // }
 
       .menu-button {
-        padding: 1.2rem 25px;
+        padding: 1.2rem 5px;
         width: 100%;
         display: grid;
         grid-auto-flow: column;
@@ -165,18 +168,16 @@
 
     .navbar {
       overflow-y: scroll;
-      position: absolute;
       height: 100vh;
-
-      width: 95%;
+      padding: 0 5%;
+      width: 100%;
       position: absolute;
       top: calc(var(--nav-height) + 10px);
       display: flex;
-      left: 0;
-      // row-gap: 2rem;
+      // left: 0;
       flex-direction: column;
-      left: 50%;
-      transform: translateX(-50%);
+      // left: 50%;
+      // transform: translateX(-50%);
     }
 
     .menu_mobile {
