@@ -19,10 +19,9 @@
 
 :root,
 * {
-  // type scale
-  --text-xs: calc((var(--text-unit) / var(--text-scale-ratio)) / var(--text-scale-ratio));
+  --text-xs: calc(var(--text-unit) / var(--text-scale-ratio));
   --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
-  --text-md: calc(var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-md: calc(var(--text-sm) * var(--text-scale-ratio));
   --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
   --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
   --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
@@ -30,12 +29,12 @@
   --text-xxxxl: calc(var(--text-xxxl) * var(--text-scale-ratio));
 }
 
-@include minMedia(1400px) {
-  :root {
-    --text-base-size: 1.25rem;
-    --text-scale-ratio: 1.25;
-  }
-}
+// @include minMedia(1400px) {
+//   :root {
+//     --text-base-size: 1.25rem;
+//     --text-scale-ratio: 1.25;
+//   }
+// }
 
 body {
   font-family: var(--font-primary);
@@ -46,7 +45,7 @@ h2,
 h3,
 h4 {
   font-family: var(--font-primary);
-  --heading-font-weight: 700;
+  --heading-font-weight: 600;
 }
 
 h1 {
@@ -66,7 +65,7 @@ h5 {
 }
 
 p {
-  font-size: var(--text-base);
+  font-size: var(--text-sm);
 }
 
 // font family
