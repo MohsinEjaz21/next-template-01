@@ -191,11 +191,12 @@
   &.desktop {
     display: grid;
     grid-auto-flow: column;
-    flex-shrink: 0;
-    grid-template-columns: auto auto;
     align-items: center;
-    column-gap: 3rem;
     padding: 0 5%;
+
+    @include maxMedia(1200px) {
+      padding: 0 2%;
+    }
 
     .navbar {
       height: var(--nav-height);
