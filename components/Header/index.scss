@@ -1,6 +1,11 @@
 .header-sec {
-  --color-light: #1d1d1d;
-  --color-dark: #ffffff;
+  --color-dark: #1d1d1d;
+  --color-light: #ffffff;
+
+  &.dark {
+    --color-dark: #ffffff;
+    --color-light: #1d1d1d;
+  }
 
   height: var(--nav-height);
   box-shadow: var(--box-shadow-dark);

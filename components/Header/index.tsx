@@ -1,6 +1,7 @@
 
 import MenuClose from "@/assets/icons/fa-mobile-close.svg";
 import MenuOpen from "@/assets/icons/fa-mobile-open.svg";
+import Logo from '@/assets/icons/logo.svg';
 
 import { useEffect, useRef, useState } from "react";
 import { MENU_DATA } from "./MenuData";
@@ -170,8 +171,9 @@ function Header() {
 
 
   return (
-    <header className="header-sec fixed-nav" ref={headerRef}>
-      <img className="logo" src="assets/icons/logo.svg" alt="Logo" />
+    <header className="header-sec fixed-nav dark" ref={headerRef}>
+      {/* <img className="logo" src={logo} alt="Logo" /> */}
+      <Logo className="logo" />
       <nav className="navbar" ref={navRef}>
         {data.menu.map((e, i) => (
           <ForeachNavItem key={i} e={e} i={i}></ForeachNavItem>
