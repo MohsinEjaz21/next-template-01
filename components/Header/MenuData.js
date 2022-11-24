@@ -10,7 +10,7 @@ export const MENU_DATA = {
           text: 'Administration',
         },
         {
-          text: 'Editor / Researcher',
+          text: 'Researcher',
         }
       ]
     },
