@@ -1,5 +1,6 @@
 .header-sec {
-  // --box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(1, 1, 1, 0.15) 0px 0px 0px 1px;
+  --color-dark: #000000;
+  --color-light: #ffffff;
 
   height: var(--nav-height);
   box-shadow: var(--box-shadow-dark);
@@ -29,32 +30,8 @@
     transition: all 0.2s ease-out;
   }
 
-  .hidden {
-    visibility: hidden;
-    height: 0;
-    //z-index: -1;
-    overflow: hidden;
-  }
-
-  .visible {
-    visibility: visible;
-    //z-index: 1;
-    overflow: visible;
-    height: auto;
-  }
-
   .logo {
     width: 200px;
-  }
-
-  .v-center-abs {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .h-center-abs {
-    left: 50%;
-    transform: translateX(-50%);
   }
 
   .custom-border {
@@ -74,9 +51,7 @@
   }
 
   .border-top {
-    // left: 18px;
     width: 100%;
-    // width: calc(100% - 30px);
     height: 1px;
     background-color: var(--color-dark);
     opacity: 0.4;

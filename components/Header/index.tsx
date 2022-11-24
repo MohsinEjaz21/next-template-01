@@ -171,7 +171,7 @@ function Header() {
 
   return (
     <header className="header-sec fixed-nav" ref={headerRef}>
-      <img className="logo" src="assets/icons/logo.svg" alt="Kyndryl logo" />
+      <img className="logo" src="assets/icons/logo.svg" alt="Logo" />
       <nav className="navbar" ref={navRef}>
         {data.menu.map((e, i) => (
           <ForeachNavItem key={i} e={e} i={i}></ForeachNavItem>

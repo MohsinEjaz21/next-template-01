@@ -73,6 +73,28 @@ main {
   font-weight: 600;
 }
 
+.v-center-abs {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.h-center-abs {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+}
+
+.visible {
+  visibility: visible;
+  overflow: visible;
+  height: auto;
+}
+
 ul {
   list-style-type: none;
 }
