@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 :root {
   // font family
-  --font-primary: Inter, system-ui, sans-serif;
+  // --font-primary: Inter, system-ui, sans-serif;
+  --font-primary: "Poppins", sans-serif;
 
   // font size
-  --text-base-size: 1rem; // body font-size
+  --text-base-size: 1.125rem; // body font-size
   --text-scale-ratio: 1.2; // multiplier used to generate the type scale values 👇
 
   // line-height
