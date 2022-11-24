@@ -11,7 +11,6 @@ function Section_01() {
       </div>
       <div className="frame_02">
         <img src={"https://picsum.photos/seed/picsum/700/700"} alt="" />
-
       </div>
     </section>
   )
