@@ -1,16 +1,18 @@
-import BtnPrimary from "@/components/widgets/Buttons/BtnPrimary"
+import BtnPrimary from "@/components/widgets/Buttons/BtnPrimary";
+import { HomeDataSource } from "../HomeDataSource";
 
+const data = HomeDataSource.section01;
 function Section_01() {
   return (
     <section className="section_01">
       <div className="frame_01">
-        <h3>WHO WE ARE</h3>
-        <h2>CENTRE FOR AEROSPACE & SECURITY STUDIES</h2>
-        <p>The “Centre for Aerospace & Security Studies” (CASS) is an independent think tank located in Islamabad, Pakistan. CASS is unique in its specialization of Aerospace, as the only think tank in Pakistan to carry out systematic research in the domain. The aerospace sector is a key driver behind globalization, playing a pivotal role in national security, economic development and in supporting long-term economic growth to facilitate a country’s integration into the global economy. </p>
-        <BtnPrimary label='More About Us' />
+        <h3>{data.text01}</h3>
+        <h2>{data.text02}</h2>
+        <p>{data.text03} </p>
+        <BtnPrimary label={data.btnText} />
       </div>
       <div className="frame_02">
-        <img src={"https://picsum.photos/seed/picsum/700/700"} alt="" />
+        <img src={data.image} alt="" />
       </div>
     </section>
   )
