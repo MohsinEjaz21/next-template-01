@@ -23,6 +23,10 @@
     gap: 1rem;
     justify-items: start;
     max-width: 600px;
+
+    h4 {
+    }
+
     @include xs {
       justify-items: center;
       h4,

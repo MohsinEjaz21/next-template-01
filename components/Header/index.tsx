@@ -171,7 +171,7 @@ function Header() {
 
 
   return (
-    <header className="header-sec fixed-nav dark" ref={headerRef}>
+    <header className={`header-sec fixed-nav`} ref={headerRef}>
       {/* <img className="logo" src={logo} alt="Logo" /> */}
       <Logo className="logo" />
       <nav className="navbar" ref={navRef}>

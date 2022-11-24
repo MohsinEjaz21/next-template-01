@@ -13,9 +13,7 @@ function BtnPrimary({
   }
   return (
     <button className="btnPrimary" onClick={handleClick} >
-      <p>
-        {label}
-      </p>
+      {label}
     </button>
 
   )
