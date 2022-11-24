@@ -1,8 +1,8 @@
-@function mcolor($bg) {
-  @if (lightness($bg) > 50) {
-    @return var(--color-dark);
+@function mcolor($color) {
+  @if (lightness($color) > 50) {
+    @return var(--color-900);
   } @else {
-    @return var(--color-light);
+    @return var(--color-50);
   }
 }
 

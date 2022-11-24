@@ -1,19 +1,12 @@
-import BtnPlay from '../../widgets/Buttons/BtnPlay'
-import BtnPrimary from '../../widgets/Buttons/BtnPrimary'
+import BtnPrimary from "@/components/widgets/Buttons/BtnPrimary"
 
 function Section_01() {
   return (
     <section className="section_01">
-      <h1 data-scroll className="h-medium">Centre for <span>Aerospace</span> & <br />  <span>Security</span> Studies</h1>
-      <p data-scroll className="paragraph">An independent analysis on Aerospace and International Security Issues</p>
-      <BtnPlay text={'About CASS'} class="magnet" handleClick={() => window.open("https://youtu.be/2JzP4MGeqDQ", '_blank')} />
-      <div className="btn-group">
-        <BtnPrimary text={'About CASS'} handleClick={() => window.open("https://www.youtube.com/channel/UCtJntJfsIcBLC9jJdqtA-kQ", '_blank')} />
-        {/* <BtnDefault text={'About CASS'} handleClick={() => window.open("https://youtu.be/2JzP4MGeqDQ", '_blank')} /> */}
-        <BtnPrimary text="YOUTUBE" image={<div className="icons8-youtube"></div>} />
-
-      </div>
-
+      <h4>WHO WE ARE</h4>
+      <h2>CENTRE FOR AEROSPACE & SECURITY STUDIES</h2>
+      <p>The “Centre for Aerospace & Security Studies” (CASS) is an independent think tank located in Islamabad, Pakistan. CASS is unique in its specialization of Aerospace, as the only think tank in Pakistan to carry out systematic research in the domain. The aerospace sector is a key driver behind globalization, playing a pivotal role in national security, economic development and in supporting long-term economic growth to facilitate a country’s integration into the global economy. </p>
+      <BtnPrimary label='More About Us' />
     </section>
   )
 }
