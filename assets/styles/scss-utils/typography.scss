@@ -19,7 +19,7 @@
   // unit - don't modify unless you want to change the typography unit (e.g., from Rem to Em units)
   --text-unit: var(--text-base-size); // if Em units → --text-unit: 1em;
 
-  @include md {
+  @include maxMedia(1200px) {
     --text-base-size: 1.125rem;
     --text-scale-ratio: 1.1;
   }
