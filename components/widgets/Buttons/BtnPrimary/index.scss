@@ -20,7 +20,7 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
-  color: $color_900;
+  color: $color_dark;
   background-color: $color_light;
   padding: 0.7em 1.7em;
   border-radius: 30px;
@@ -42,6 +42,7 @@
 
   &:hover {
     color: $color_light;
+    border: 1px solid $color_light;
     &:before {
       top: -35%;
       background-color: $color_dark;
