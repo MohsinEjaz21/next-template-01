@@ -31,6 +31,23 @@ export const MENU_DATA = {
           submenu: [
             {
               text: '2021',
+              submenu: [
+                {
+                  text: '2021',
+                },
+                {
+                  text: '2022',
+                },
+                {
+                  text: '2023',
+                },
+                {
+                  text: '2024',
+                },
+                {
+                  text: '2025',
+                },
+              ]
             },
             {
               text: '2022',
