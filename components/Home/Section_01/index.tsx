@@ -3,7 +3,7 @@ import BtnPrimary from '../../widgets/Buttons/BtnPrimary'
 
 function Section_01() {
   return (
-    <section className="section_01" data-scroll-section>
+    <section className="section_01">
       <h1 data-scroll className="h-medium">Centre for <span>Aerospace</span> & <br />  <span>Security</span> Studies</h1>
       <p data-scroll className="paragraph">An independent analysis on Aerospace and International Security Issues</p>
       <BtnPlay text={'About CASS'} class="magnet" handleClick={() => window.open("https://youtu.be/2JzP4MGeqDQ", '_blank')} />
