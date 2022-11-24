@@ -40,7 +40,7 @@
 }
 
 * {
-  //  background: rgb(0 100 0 / 0.1) !important;
+  background: rgb(0 100 0 / 0.1) !important;
 }
 
 html {
@@ -54,9 +54,7 @@ html {
 body {
   // background: var(--body-bg);
   --nav-height: 70px;
-  @include maxMedia(1025px) {
-    --nav-height: 65px;
-  }
+
   &.dark {
     --color-dark: #ffffff;
     --color-light: #000000;
@@ -142,7 +140,8 @@ ul {
 
 section {
   max-width: 2550px;
-  margin: 0 auto;
+  margin: 30px auto;
+  max-width: 95%;
   // margin-bottom: 8rem !important;
 }
 
