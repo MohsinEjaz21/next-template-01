@@ -6,6 +6,13 @@
   height: var(--nav-height);
   z-index: 999;
 
+  &.fixed-nav {
+    top: 0px;
+    position: sticky;
+    background: var(--color-light);
+    width: 100%;
+  }
+
   .arrow {
     width: 10px;
     height: 10px;
@@ -75,13 +82,6 @@
     opacity: 0.4;
     top: 65px;
     @extend .custom-border;
-  }
-
-  &.fixed-nav {
-    top: 0px;
-    position: sticky;
-    background: var(--color-light);
-    width: 100%;
   }
 
   // &&&&&&&&&&&&&&
