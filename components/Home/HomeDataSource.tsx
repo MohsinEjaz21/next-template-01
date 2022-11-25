@@ -4,7 +4,7 @@ export const HomeDataSource = {
     text02: 'CENTRE FOR AEROSPACE & SECURITY STUDIES',
     text03: 'The “Centre for Aerospace & Security Studies” (CASS) is an independent think tank located in Islamabad, Pakistan. CASS is unique in its specialization of Aerospace, as the only think tank in Pakistan to carry out systematic research in the domain. The aerospace sector is a key driver behind globalization, playing a pivotal role in national security, economic development and in supporting long-term economic growth to facilitate a country’s integration into the global economy. ',
     btnText: 'Who We Are',
-    image: 'https://picsum.photos/seed/picsum/700/700'
+    vedioUrl: 'https://youtube.com/embed/07uRvQylk74?rel=0&autoplay=0'
   },
   section02: {
     text01: 'Message From the President',
