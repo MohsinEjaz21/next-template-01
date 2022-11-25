@@ -8,6 +8,7 @@
   max-height: var(--frame-maxHeight);
   align-items: center;
   gap: 2rem;
+  margin: 30px auto;
 
   @include md {
     --frame-maxWidth: 550px;
@@ -53,6 +54,12 @@
     // max-height: var(--frame-maxHeight);
     overflow: scroll;
     // max-width: 600px;
+
+    width: 85%;
+
+    @include md {
+      width: 100%;
+    }
 
     @include xs {
       justify-items: center;
