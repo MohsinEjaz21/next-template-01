@@ -2,7 +2,7 @@
   --frame-maxWidth: 550px;
   --frame-maxHeight: 550px;
 
-  padding: 20px 0;
+  margin: 20px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   // max-height: 700px;
@@ -43,7 +43,7 @@
 
     @include xs {
       justify-items: center;
-      h4,
+      h3,
       h2 {
         text-align: center;
       }
