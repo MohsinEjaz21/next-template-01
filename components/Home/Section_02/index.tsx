@@ -21,7 +21,7 @@ function Section_02() {
         <img src={data.image} alt="" />
       </div>
       <div className="frame_02">
-        <h3>{data.text01}</h3>
+        <h4>{data.text01}</h4>
         <h2>{data.text02}</h2>
         <div>
           <ElipseText text={text} size={554} />

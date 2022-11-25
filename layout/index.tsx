@@ -7,7 +7,9 @@ function Layout({ children }) {
       <Header />
       <Script src="assets/scripts/typetura.min.js" />
 
-      <main data-barba="container" custom-theme="dark">
+      {/* <main data-barba="container" custom-theme="dark"> */}
+      <main data-barba="container" >
+
         {children}
       </main>
     </div>

@@ -6,7 +6,17 @@
   max-height: var(--frame-maxHeight);
   align-items: center;
   gap: 2rem;
-  margin: 30px auto;
+  // margin: 30px auto;
+
+  background-color: var(--color-light);
+  // * {
+  //   color: var(--color-dark);
+  // }
+
+  box-shadow: 0 0 0 100vmax var(--color-light);
+  background: var(--color-light);
+  clip-path: inset(0 -100vmax);
+  overflow-x: hidden;
 
   @include md {
     grid-auto-flow: row;
@@ -53,13 +63,19 @@
 
     width: 85%;
 
+    h4 {
+      font-weight: 500;
+      color: var(--color-1);
+      border-bottom: 2px solid var(--color-1);
+    }
+
     @include md {
       width: 100%;
     }
 
     @include xs {
       justify-items: center;
-      h3,
+      h4,
       h2 {
         text-align: center;
       }

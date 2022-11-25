@@ -6,7 +6,7 @@ function Section_01() {
   return (
     <section className="section_01">
       <div className="frame_01">
-        <h3>{data.text01}</h3>
+        <h4>{data.text01}</h4>
         <h2>{data.text02}</h2>
         <p>{data.text03} </p>
         <BtnPrimary label={data.btnText} />
