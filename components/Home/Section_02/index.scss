@@ -6,6 +6,7 @@
   max-height: var(--frame-maxHeight);
   align-items: center;
   gap: 2rem;
+  // overflow: hidden;
   // margin: 30px auto;
 
   background-color: var(--color-light);
@@ -58,15 +59,14 @@
     gap: 1rem;
     justify-items: start;
     // max-height: var(--frame-maxHeight);
-    overflow: scroll;
     // max-width: 600px;
 
     width: 85%;
 
     h4 {
-      font-weight: 500;
+      font-weight: 600;
       color: var(--color-1);
-      border-bottom: 2px solid var(--color-1);
+      border-bottom: 3px solid var(--color-1);
     }
 
     @include md {
