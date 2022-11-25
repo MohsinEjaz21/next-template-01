@@ -1,10 +1,6 @@
 .section_02 {
-  --frame-maxWidth: 1600px;
-  --frame-maxHeight: 800px;
-
   // margin: 30px auto;
   max-width: var(--frame-maxWidth);
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-height: var(--frame-maxHeight);
@@ -13,12 +9,10 @@
   margin: 30px auto;
 
   @include md {
-    --frame-maxWidth: 550px;
     grid-auto-flow: row;
     grid-template-columns: 1fr;
     max-height: none;
     row-gap: 1rem;
-    max-width: var(--frame-maxWidth);
   }
 
   .frame_01 {

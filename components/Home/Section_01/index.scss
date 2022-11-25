@@ -1,24 +1,19 @@
 .section_01 {
-  --frame-maxWidth: 1600px;
-  --frame-maxHeight: 800px;
-
   max-width: var(--frame-maxWidth);
+  max-height: var(--frame-maxHeight);
   margin: 30px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-height: var(--frame-maxHeight);
   align-items: center;
   gap: 2rem;
   // width: 90%;
   // max-width: var(--frame-maxWidth);
 
   @include md {
-    --frame-maxWidth: 550px;
     grid-auto-flow: row;
     grid-template-columns: 1fr;
     max-height: none;
     row-gap: 1rem;
-    max-width: var(--frame-maxWidth);
   }
 
   .frame_01 {
@@ -31,15 +26,12 @@
     justify-items: start;
     width: 95%;
 
-    @include md {
-      width: 100%;
-    }
-
-    h4 {
-    }
-
     p {
       text-align: justify;
+    }
+
+    @include md {
+      width: 100%;
     }
 
     @include xs {

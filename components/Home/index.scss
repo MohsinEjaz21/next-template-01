@@ -1,4 +1,11 @@
 .home {
+  --frame-maxWidth: 1600px;
+  --frame-maxHeight: 800px;
+
+  @include md {
+    --frame-maxWidth: 550px;
+  }
+
   @import "./Section_01/index.scss";
   @import "./Section_02/index.scss";
 }
