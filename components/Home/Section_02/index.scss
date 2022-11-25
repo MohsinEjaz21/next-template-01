@@ -3,10 +3,8 @@
   max-width: var(--frame-maxWidth);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-height: var(--frame-maxHeight);
   align-items: center;
   gap: 2rem;
-  // overflow: hidden;
   // margin: 30px auto;
 
   background-color: var(--color-light);
@@ -60,6 +58,7 @@
     justify-items: start;
     // max-height: var(--frame-maxHeight);
     // max-width: 600px;
+    overflow: visible;
 
     width: 85%;
 
