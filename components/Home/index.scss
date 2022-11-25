@@ -1,7 +1,7 @@
 .home {
   --frame-maxHeight: 800px;
 
-  @extend .sections-wrapper;
+  @extend .sections-wrapper !optional;
 
   @import "./Section_01/index.scss";
   @import "./Section_02/index.scss";
