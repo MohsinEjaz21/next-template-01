@@ -1,23 +1,13 @@
 .section_01 {
-  max-width: var(--frame-maxWidth);
-  max-height: var(--frame-maxHeight);
-  background-color: var(--color-light);
-  // * {
-  //   color: var(--color-dark);
-  // }
-
   box-shadow: 0 0 0 100vmax var(--color-light);
   background: var(--color-light);
   clip-path: inset(0 -100vmax);
   overflow-x: hidden;
 
-  // margin: 30px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 2rem;
-  // width: 90%;
-  // max-width: var(--frame-maxWidth);
 
   @include md {
     grid-auto-flow: row;

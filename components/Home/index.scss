@@ -1,14 +1,9 @@
 .home {
-  --frame-maxWidth: 1600px;
   --frame-maxHeight: 800px;
 
-  @include md {
-    --frame-maxWidth: 550px;
-  }
+  @extend .sections-wrapper;
 
   @import "./Section_01/index.scss";
   @import "./Section_02/index.scss";
   @import "./Section_03/index.scss";
-
-  @extend .sections-wrapper;
 }

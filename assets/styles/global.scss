@@ -131,16 +131,19 @@ ul {
 }
 
 .sections-wrapper {
-  --gap: 80px;
-  --margin-top-btm: 40px;
+  --grid_gap: 80px;
+  --grid_margin: 40px;
+  --frame_maxwidth: 1600px;
 
+  max-width: var(--frame_maxwidth);
   display: grid;
   width: fit-content;
-  gap: var(--gap);
-  margin: var(--margin-top-btm) auto;
+  gap: var(--grid_gap);
+  margin: var(--grid_margin) auto;
 
   @include md {
-    --gap: 50px;
+    --grid_gap: 50px;
+    --frame_maxwidth: 600px;
   }
 }
 

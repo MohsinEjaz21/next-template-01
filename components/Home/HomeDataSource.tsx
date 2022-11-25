@@ -1,6 +1,6 @@
 export const HomeDataSource = {
   section01: {
-    text01: 'Who We are',
+    text01: 'Who We Are',
     text02: 'CENTRE FOR AEROSPACE & SECURITY STUDIES',
     text03: <> The <span>“Centre for Aerospace & Security Studies”</span>  (CASS) is an independent think tank located in Islamabad, Pakistan. CASS is unique in its specialization of Aerospace, as the only think tank in Pakistan to carry out systematic research in the domain. The aerospace sector is a key driver behind globalization, playing a pivotal role in national security, economic development and in supporting long-term economic growth to facilitate a country’s integration into the global economy. </>,
     btnText: 'Who We Are',
@@ -15,5 +15,19 @@ export const HomeDataSource = {
       <br /><br /> Maintaining a winning Aerospace Power requires high-end technologies that are not only cost-intensive, but their availability with the passage of time is likely to be challenging. In our region, these technologies are largely purchased or borrowed. Therefore, working towards our vision of strengthening National Security in all its forms, through indigenization, CASS would continue to lay emphasis on innovative research on emerging technologies, including but not limited to cyber and space. We continue to enhance our outreach through greater use of media, seminars, webinars, digital technologies, joint research and cementing our relationships with domestic, regional, and global partners.
       <br /><br /> InshAllah, in the times ahead, we will continue to build upon our achievements by setting even higher standards of research for inputs in the national policymaking process.</>,
     image: 'https://casstt.com/wp-content/uploads/2022/11/President.jpg'
+  },
+  section03: {
+    data: [
+      {
+        key: 1,
+        text01: 'Our Mission',
+        text02: 'To provide independent insight and analysis on aerospace and international security issues, of both an immediate and long-term concern; and to inform the discourse of policymakers, academics, and practitioners through a diverse range of detailed research outputs disseminated through both direct and indirect engagement on a regular basis.',
+      },
+      {
+        key: 2,
+        text01: 'Our Vision',
+        text02: 'To serve as a thought leader in the aerospace and security domains globally, providing thinkers and policymakers with independent, comprehensive and multifaceted insight on aerospace and security issues.',
+      }
+    ]
   }
 }
