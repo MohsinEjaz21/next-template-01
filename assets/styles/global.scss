@@ -130,14 +130,28 @@ ul {
   // background-color: var(--color-bg-image);
 }
 
-section {
-  max-width: 2550px;
-  margin: 50px auto;
-  max-width: 95%;
+.sections-wrapper {
+  --gap: 80px;
+  --margin-top-btm: 40px;
+
+  display: grid;
+  width: fit-content;
+  gap: var(--gap);
+  margin: var(--margin-top-btm) auto;
+
   @include md {
-    margin: 30px auto;
+    --gap: 50px;
   }
 }
+
+// section {
+//   max-width: 2550px;
+//   margin: 50px auto;
+//    max-width: 95%;
+//   @include md {
+//     margin: 30px auto;
+//   }
+// }
 
 .u-block-1 {
   width: 70%;

@@ -8,4 +8,7 @@
 
   @import "./Section_01/index.scss";
   @import "./Section_02/index.scss";
+  @import "./Section_03/index.scss";
+
+  @extend .sections-wrapper;
 }
