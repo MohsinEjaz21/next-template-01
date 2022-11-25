@@ -20,9 +20,11 @@
   .frame_01 {
     position: relative;
     margin: 0 auto;
+    height: 650px;
 
     @include md {
-      max-height: 450px;
+      order: 1;
+      height: 550px;
       // min-width: 100%;
     }
 
