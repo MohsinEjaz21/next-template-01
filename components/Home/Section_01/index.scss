@@ -1,6 +1,7 @@
 .section_01 {
   max-width: var(--frame-maxWidth);
   max-height: var(--frame-maxHeight);
+  background-color: var(--color-dark);
   margin: 30px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
