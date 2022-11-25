@@ -2,7 +2,7 @@
   --nav-height: 70px;
   --color-dark: #0d182c;
   --color-light: #ffffff;
-  --color-1: #cae88e;
+  --color-1: #5a7729;
   --color-2: #1a4a67;
 
   --color-gradient: linear-gradient(82.3deg, var(--color-1) 10.8%, var(--color-2) 94.3%);
@@ -33,6 +33,7 @@ p {
 [custom-theme="dark"] {
   --color-light: #0d182c;
   --color-dark: #ffffff;
+  --color-1: #cae88e;
 }
 
 html {
@@ -135,7 +136,7 @@ section {
   --row_gap: 80px;
   max-width: var(--frame_maxwidth);
   margin: 0px auto;
-  // padding-top: var(--row_gap);
+  padding-top: var(--row_gap);
   padding-bottom: var(--row_gap);
 
   @include md {
@@ -143,6 +144,13 @@ section {
     --row_gap: 50px;
     overflow: hidden;
   }
+}
+
+.full_bg {
+  box-shadow: 0 0 0 100vmax var(--color-light);
+  background: var(--color-light);
+  clip-path: inset(0 -100vmax);
+  overflow-x: hidden;
 }
 
 .u-block-1 {

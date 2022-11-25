@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Header />
-      <main className="main" custom-theme="dark">
+      <main className="main" custom-theme="darks">
         <Component {...pageProps} />
       </main>
     </>

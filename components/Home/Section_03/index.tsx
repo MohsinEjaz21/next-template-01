@@ -6,7 +6,7 @@ function Section_03() {
 
 
   return (
-    <section className="section_03" data-scroll-section>
+    <section className="section_03" data-scroll-section custom-theme="dark">
       <>
         {data.map(e => (
           <div className="frame_01" key={e.key} >

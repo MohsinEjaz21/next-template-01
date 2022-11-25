@@ -1,13 +1,23 @@
 .section_03 {
-  * {
-    // background: rgb(0 100 0 / 0.1) !important;
-  }
   display: grid;
   grid-auto-flow: column;
+  align-items: start;
+  gap: 2rem;
+
+  @extend .full_bg;
+
   .frame_01 {
+    display: grid;
+    gap: 1rem;
+    max-width: 650px;
     display: grid;
   }
   .text01 {
+    padding-bottom: 5px;
+    font-weight: 600;
+    color: var(--color-1);
+    border-bottom: 3px solid var(--color-1);
+    width: fit-content;
   }
   .text02 {
     align-self: flex-start;
