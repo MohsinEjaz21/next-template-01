@@ -4,7 +4,8 @@ function BtnPrimary({
   onClick = null,
   children = null,
   iconLeft = null,
-  iconRight = null
+  iconRight = null,
+  className = ''
 }) {
   function handleClick() {
     if (onClick) {
@@ -12,7 +13,7 @@ function BtnPrimary({
     }
   }
   return (
-    <button className="btnPrimary" onClick={handleClick} >
+    <button className={`btnPrimary ${className}`} onClick={handleClick} >
       {label}
     </button>
 
