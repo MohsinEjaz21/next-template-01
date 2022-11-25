@@ -1,17 +1,21 @@
 .header-sec {
-  // --color-dark: rgb(29, 29, 29);
-  // --color-light: #ffffff;
-  --color-logo: var(--color-dark);
+  --c-dark: var(--color-dark);
+  --c-light: var(--color-light);
+  --color-logo: var(--c-dark);
 
   height: var(--nav-height);
   box-shadow: var(--box-shadow-dark);
   height: var(--nav-height);
   z-index: 999;
 
+  .menu-button .paragraph {
+    color: var(--c-dark);
+  }
+
   &.fixed-nav {
     top: 0px;
     position: sticky;
-    background: var(--color-light);
+    background: var(--c-light);
     width: 100%;
   }
 
@@ -37,7 +41,7 @@
 
   .custom-border {
     transition: var(--transition);
-    background-color: var(--color-dark);
+    background-color: var(--c-dark);
     box-sizing: border-box;
     content: "";
     position: absolute;
@@ -54,7 +58,7 @@
   .border-top {
     width: 100%;
     height: 1px;
-    background-color: var(--color-dark);
+    background-color: var(--c-dark);
     opacity: 0.4;
     top: 65px;
     @extend .custom-border;
@@ -95,7 +99,7 @@
 
     .menu-sub-list {
       padding-left: 15px;
-      // border-top: 1px solid var(--color-dark);
+      // border-top: 1px solid var(--c-dark);
 
       &:before {
         @extend .border-left;
@@ -105,7 +109,7 @@
     .nav__item {
       width: 100%;
       position: relative;
-      // border-top: 1px solid var(--color-dark);
+      // border-top: 1px solid var(--c-dark);
       &:before {
         @extend .border-top;
       }
@@ -191,9 +195,9 @@
     }
 
     .menu-button {
-      --arrow-color: var(--color-dark);
+      --arrow-color: var(--c-dark);
       transition: var(--transition);
-      color: var(--color-dark);
+      color: var(--c-dark);
       height: fit-content;
       column-gap: 1rem;
       border: 0;
@@ -212,7 +216,7 @@
       //z-index: 1;
       box-shadow: var(--box-shadow);
       color: var(--color-white);
-      background-color: var(--color-dark);
+      background-color: var(--c-dark);
       margin: 0;
       display: none;
       width: 100%;
@@ -226,7 +230,7 @@
       //   }
 
       .menu-button {
-        --arrow-color: var(--color-light);
+        --arrow-color: var(--c-light);
         margin-top: 0px;
         height: 100%;
         justify-content: space-between;
@@ -235,15 +239,15 @@
         padding-right: 10px;
         border-radius: 8px;
         &:hover {
-          --arrow-color: var(--color-dark);
+          --arrow-color: var(--c-dark);
 
-          background-color: var(--color-light);
+          background-color: var(--c-light);
           .paragraph {
-            color: var(--color-dark);
+            color: var(--c-dark);
           }
         }
         .paragraph {
-          color: var(--color-light);
+          color: var(--c-light);
         }
       }
     }
@@ -281,7 +285,7 @@
           background-repeat: no-repeat;
           background-size: 100%;
           @extend .h-center-abs;
-          background-color: var(--color-dark);
+          background-color: var(--c-dark);
           mask-image: url("https://raw.githubusercontent.com/MohsinEjaz21/next-static-export-menu/main/public/assets/icons/underline.svg");
           // object-fit: scale-down;
           // clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
@@ -304,7 +308,7 @@
           // background: var(--hover-bg);
 
           > .arrow-bottom {
-            --arrow-color: var(--color-dark);
+            --arrow-color: var(--c-dark);
           }
 
           &:before {
@@ -326,7 +330,7 @@
       height: 100%;
       box-shadow: var(--box-shadow);
       color: var(--color-white);
-      background-color: var(--color-dark);
+      background-color: var(--c-dark);
       // border-radius: 8px;
       position: absolute;
       left: 100%;
@@ -344,7 +348,7 @@
       // position: relative;
       width: 106%;
       > button > .arrow-bottom {
-        // border: 1.3px solid var(--color-light);
+        // border: 1.3px solid var(--c-light);
       }
       &:hover {
         > .menu-sub-list {

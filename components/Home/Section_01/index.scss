@@ -1,7 +1,10 @@
 .section_01 {
   max-width: var(--frame-maxWidth);
   max-height: var(--frame-maxHeight);
-  background-color: var(--color-dark);
+  background-color: var(--color-light);
+  // * {
+  //   color: var(--color-dark);
+  // }
 
   margin: 30px auto;
   display: grid;
@@ -27,6 +30,11 @@
     max-width: 650px;
     justify-items: start;
     width: 95%;
+
+    h3,
+    p,
+    button {
+    }
 
     p {
       text-align: justify;
