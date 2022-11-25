@@ -20,19 +20,19 @@
   // background: rgb(0 100 0 / 0.1) !important;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--color-light);
+}
+
 [custom-theme="dark"] {
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: var(--color-light);
-  }
-  p {
-    opacity: 0.75;
-  }
+  --color-light: #0d182c;
+  --color-dark: #ffffff;
 }
 
 html {

@@ -2,6 +2,7 @@
   max-width: var(--frame-maxWidth);
   max-height: var(--frame-maxHeight);
   background-color: var(--color-dark);
+
   margin: 30px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -31,6 +32,11 @@
       text-align: justify;
     }
 
+    h3 {
+      color: var(--color-1);
+      border-bottom: 5px solid var(--color-1);
+    }
+
     button {
       margin-top: 10px;
     }
@@ -40,7 +46,7 @@
 
     @include xs {
       justify-items: center;
-      h4,
+      h3,
       h2 {
         text-align: center;
       }
