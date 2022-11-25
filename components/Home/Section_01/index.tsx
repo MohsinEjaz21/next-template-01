@@ -5,10 +5,10 @@ const data = HomeDataSource.section01;
 function Section_01() {
   return (
     <section className="section_01" data-scroll-section>
-      <div data-scroll data-scroll-speed="1" className="frame_01">
-        <h4 >{data.text01}</h4>
+      <div data-scroll data-scroll-speed="1" className="frame_01 is-inview">
+        <h4 data-scroll-position="top" >{data.text01}</h4>
         <h2 >{data.text02}</h2>
-        <p >{data.text03} </p>
+        <p data-scroll-position="bottom">{data.text03} </p>
         <BtnPrimary label={data.btnText} />
       </div>
       <div className="frame_02" data-scroll data-scroll-speed="1">
