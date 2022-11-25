@@ -1,8 +1,13 @@
 .elipse-text {
-  a {
-    // margin-top: 10px;
-    display: block;
+  .btn01 {
+    display: inline-flex;
     color: var(--color-dark);
-    text-decoration: underline;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 1px dotted var(--color-dark);
+  }
+
+  .text01 {
+    display: contents;
   }
 }
