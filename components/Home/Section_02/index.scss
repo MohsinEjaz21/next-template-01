@@ -37,15 +37,14 @@
 
   .frame_02 {
     align-self: center;
-    align-content: center;
+    // align-content: center;
     display: grid;
-    margin: 0 auto;
     padding: 10px;
     gap: 1rem;
     justify-items: start;
     // max-height: var(--frame-maxHeight);
     overflow: scroll;
-    max-width: 600px;
+    // max-width: 600px;
 
     @include xs {
       justify-items: center;
