@@ -139,10 +139,12 @@ function Header() {
   function handleMobileMenuToggle(isMenuOpened) {
     if (!isMenuOpened) {
       navRef.current.style.display = "none"
+      headerRef.current.style.position = "sticky"
       document.querySelector("main")!.style.display = "block"
       // headerRef.current.className = "header-sec fixed-nav mobile"
     } else {
       navRef.current.style.display = "flex"
+      headerRef.current.style.position = "fixed"
       document.querySelector("main")!.style.display = "none"
       // headerRef.current.className = "header-sec mobile"
     }
