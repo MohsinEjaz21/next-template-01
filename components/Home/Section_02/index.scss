@@ -1,15 +1,16 @@
 .section_02 {
-  --frame-maxWidth: 550px;
-  --frame-maxHeight: 550px;
+  --frame-maxWidth: 1600px;
+  --frame-maxHeight: 800px;
 
-  margin: 20px auto;
+  // margin: 30px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  // max-height: 700px;
-  column-gap: 1rem;
-  align-items: start;
+  max-height: var(--frame-maxHeight);
+  align-items: center;
+  gap: 2rem;
 
   @include md {
+    --frame-maxWidth: 550px;
     grid-auto-flow: row;
     grid-template-columns: 1fr;
     max-height: none;
@@ -20,7 +21,9 @@
   .frame_01 {
     position: relative;
     margin: 0 auto;
-    height: 650px;
+    display: grid;
+    width: 100%;
+    // max-width: 500px;
 
     @include md {
       order: 1;
@@ -29,7 +32,12 @@
     }
 
     img {
-      width: 100%;
+      max-height: 650px;
+      // float: left;
+      @include minMedia(1200px) {
+        width: 90%;
+        max-width: 650px;
+      }
       height: 100%;
       object-fit: cover;
     }
