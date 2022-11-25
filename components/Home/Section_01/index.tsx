@@ -5,13 +5,13 @@ const data = HomeDataSource.section01;
 function Section_01() {
   return (
     <section className="section_01" data-scroll-section>
-      <div className="frame_01">
-        <h4 data-scroll>{data.text01}</h4>
-        <h2>{data.text02}</h2>
-        <p>{data.text03} </p>
+      <div data-scroll data-scroll-speed="1" className="frame_01">
+        <h4 >{data.text01}</h4>
+        <h2 >{data.text02}</h2>
+        <p >{data.text03} </p>
         <BtnPrimary label={data.btnText} />
       </div>
-      <div className="frame_02">
+      <div className="frame_02" data-scroll data-scroll-speed="1">
         <div className="iframe-container">
           <iframe
             className="video"
