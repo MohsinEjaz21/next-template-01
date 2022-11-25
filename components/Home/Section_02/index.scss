@@ -2,11 +2,13 @@
   --frame-maxWidth: 550px;
   --frame-maxHeight: 550px;
 
-  margin: 20px 0;
+  margin: 20px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   // max-height: 700px;
   column-gap: 1rem;
+  align-items: start;
+
   @include md {
     grid-auto-flow: row;
     grid-template-columns: 1fr;
@@ -21,7 +23,7 @@
 
     @include md {
       max-height: 450px;
-      min-width: 100%;
+      // min-width: 100%;
     }
 
     img {
@@ -32,6 +34,8 @@
   }
 
   .frame_02 {
+    align-self: center;
+    align-content: center;
     display: grid;
     margin: 0 auto;
     padding: 10px;
