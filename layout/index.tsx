@@ -1,35 +1,33 @@
-import { useRef } from 'react';
-import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
+import { useEffect, useRef } from 'react';
 import Header from '../components/Header';
 
 export default function Layout({ children }) {
-  const containerRef = useRef(null)
+  const scrollRef = useRef();
+
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    const scroll = import("locomotive-scroll").then((LocomotiveScroll) => {
+      new LocomotiveScroll.default({
+        el: scrollRef.current,
+        smooth: true
+      });
+    });
+
+    // return () => scroll.destroy();
+  }, []);
 
   return (
-    <LocomotiveScrollProvider
-      options={
-        {
-          smooth: true,
-          // ... all available Locomotive Scroll instance options
-        }
-      }
-      watch={
-        [
-          //..all the dependencies you want to watch to update the scroll.
-          //  Basicaly, you would want to watch page/location changes
-          //  For exemple, on Next.js you would want to watch properties like `router.asPath` (you may want to add more criterias if the instance should be update on locations with query parameters)
-        ]
-      }
-      containerRef={containerRef}
-    >
-
+    <>
       <Header />
       {/* <main data-barba="container" custom-theme="dark"> */}
-      <main data-scroll-container ref={containerRef} >
+      <main data-scroll-container ref={scrollRef} >
 
         {children}
       </main>
-    </LocomotiveScrollProvider>
+    </>
   )
 }
 
