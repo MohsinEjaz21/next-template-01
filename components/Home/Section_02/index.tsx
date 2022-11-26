@@ -16,7 +16,7 @@ function Section_02() {
   }, [])
 
   return (
-    <section className="section_02" data-scroll-section >
+    <section className="section_02" data-scroll-section custom-theme="dark" >
       <div className="frame_01" >
         <img src={data.image} alt="" />
       </div>
