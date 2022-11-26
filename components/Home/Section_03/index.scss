@@ -2,24 +2,54 @@
   display: grid;
   grid-auto-flow: column;
   align-items: start;
-  gap: 2rem;
-
+  column-gap: 5rem;
+  row-gap: 2rem;
+  justify-content: center;
   @extend .full_bg;
+
+  @include md {
+    grid-auto-flow: row;
+    margin-top: 30px;
+  }
 
   .frame_01 {
     display: grid;
     gap: 1rem;
-    max-width: 650px;
+    max-width: 450px;
     display: grid;
+    border: 1px solid var(--color-1);
+    padding: 30px;
+    min-height: 450px;
+    align-items: flex-start;
+    border-radius: 10px;
+    grid-template-rows: 60px 1fr;
+    justify-items: center;
+    .text-group {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      gap: 0.5rem;
+      width: fit-content;
+    }
+    @include md {
+      padding: 30px 20px;
+      align-items: center;
+    }
+
+    svg {
+      color: var(--color-1);
+    }
   }
   .text01 {
     padding-bottom: 5px;
     font-weight: 600;
     color: var(--color-1);
-    border-bottom: 3px solid var(--color-1);
+    // border-bottom: 3px solid var(--color-1);
     width: fit-content;
   }
   .text02 {
+    text-align: justify;
     align-self: flex-start;
   }
 }

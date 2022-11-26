@@ -10,7 +10,10 @@ function Section_03() {
       <>
         {data.map(e => (
           <div className="frame_01" key={e.key} >
-            <h3 className="text01">{e.text01}</h3>
+            <div className="text-group" >
+              {e?.icon}
+              <h3 className="text01">{e.text01}</h3>
+            </div>
             <p className="text02">{e.text02}</p>
           </div>
         ))}
