@@ -4,7 +4,7 @@ import { HomeDataSource } from "../HomeDataSource";
 const data = HomeDataSource.section01;
 function Section_01() {
   return (
-    <section className="section_01" data-scroll-section>
+    <section className="section_01" data-scroll-section custom-theme="dark">
       <div data-scroll data-scroll-speed="1" className="frame_01 is-inview">
         <h4 data-scroll-position="top" >{data.text01}</h4>
         <h2 >{data.text02}</h2>

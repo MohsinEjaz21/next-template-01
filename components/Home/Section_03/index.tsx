@@ -3,10 +3,8 @@ import { HomeDataSource } from "../HomeDataSource";
 const data = HomeDataSource.section03.data;
 
 function Section_03() {
-
-
   return (
-    <section className="section_03" data-scroll-section  >
+    <section className="section_03" data-scroll-section custom-theme="dark" >
       <>
         {data.map(e => (
           <div className="frame_01" key={e.key} >
