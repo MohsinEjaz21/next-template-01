@@ -1,3 +1,5 @@
+import { Navigation } from "swiper";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 const data = [
   {
@@ -32,14 +34,43 @@ const data = [
   },
 ]
 
+const sliderProps = {
+  // Default parameters
+  // onSlideChange={() => console.log('slide change')}
+  // onSwiper={(swiper) => console.log(swiper)}
+  navigation: true,
+  cssMode: true,
+  spaceBetween: 50,
+  slidesPerView: 3,
+  modules: [Navigation],
+  // Responsive breakpoints
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    1025: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    }
+  }
+}
+
 export function Caresol() {
   return (
     <>
-      {
-        data.map((e, i) => (
-          <img key={i} src={e.imgUrl} />
-        ))
-      }
+      <Swiper {...sliderProps}>
+        {data.map((e, i) => (
+          <SwiperSlide key={i} >
+            <img src={e.imgUrl} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
     </>
   )
 }

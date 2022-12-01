@@ -157,6 +157,25 @@ section {
   overflow-x: hidden;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: var(--color-dark);
+  opacity: 0.75;
+  padding: 30px;
+  border-radius: 30px;
+  @include md {
+    padding: 22px;
+    border-radius: 22px;
+  }
+  &::after {
+    font-size: 28px !important;
+    color: var(--color-light);
+    @include md {
+      font-size: 15px !important;
+    }
+  }
+}
+
 .u-block-1 {
   width: 70%;
 
