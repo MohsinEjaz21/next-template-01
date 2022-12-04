@@ -4,8 +4,10 @@ const data = HomeDataSource.section03.data;
 
 function Section_03() {
   return (
-    <section className="section_03" data-scroll-section custom-theme="dark" >
-      <>
+    // custom-theme="dark"
+    <section className="section_03"  >
+      <h2 className="heading">Our Role</h2>
+      <div className="container">
         {data.map(e => (
           <div className="frame_01" key={e.key} >
             <div className="text-group" >
@@ -15,7 +17,7 @@ function Section_03() {
             <p className="text02">{e.text02}</p>
           </div>
         ))}
-      </>
+      </div>
     </section>
   )
 }

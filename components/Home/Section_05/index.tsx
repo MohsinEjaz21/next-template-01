@@ -4,11 +4,10 @@ import { HomeDataSource } from "../HomeDataSource";
 
 const data = HomeDataSource.section04.data;
 
-function Section_04() {
+function Section_05() {
   return (
-    <section className="section_04">
-      <h3 className="heading">Our Team</h3>
-
+    <section className="section_05">
+      <h3 className="heading">Latest Publications</h3>
       <div className="container" >
         <Caresol>
           {data.map((e, i) => (
@@ -26,4 +25,4 @@ function Section_04() {
   )
 }
 
-export default Section_04
+export default Section_05

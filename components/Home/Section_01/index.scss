@@ -1,106 +1,114 @@
 .section_01 {
-  box-shadow: 0 0 0 100vmax var(--color-light);
-  background: var(--color-light);
-  clip-path: inset(0 -100vmax);
-  overflow-x: hidden;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 2rem;
-
-  @include md {
-    grid-auto-flow: row;
-    grid-template-columns: 1fr;
-    max-height: none;
-    row-gap: 1rem;
+  // height: 100vh;
+  .background {
+    position: absolute;
+    background-color: red;
+    width: 300px;
   }
+  .container {
+    box-shadow: 0 0 0 100vmax var(--color-light);
+    background: var(--color-light);
+    clip-path: inset(0 -100vmax);
+    overflow-x: hidden;
 
-  .frame_01 {
     display: grid;
-    align-content: center;
-    // margin: 0 auto;
-    padding: 20px;
-    gap: 1rem;
-    max-width: 650px;
-    justify-items: start;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 2rem;
 
-    p {
-      text-align: justify;
-    }
-
-    h4 {
-      padding-bottom: 5px;
-      font-weight: 600;
-      color: var(--color-1);
-      border-bottom: 3px solid var(--color-1);
-    }
-
-    button {
-      margin-top: 10px;
-    }
     @include md {
-      width: 100%;
+      grid-auto-flow: row;
+      grid-template-columns: 1fr;
+      max-height: none;
+      row-gap: 1rem;
     }
 
-    @include xs {
-      justify-items: center;
-      h4,
-      h2 {
-        text-align: center;
-      }
+    .frame_01 {
+      display: grid;
+      align-content: center;
+      // margin: 0 auto;
+      padding: 20px;
+      gap: 1rem;
+      max-width: 650px;
+      justify-items: start;
+
       p {
         text-align: justify;
       }
+
+      h4 {
+        padding-bottom: 5px;
+        font-weight: 600;
+        color: var(--color-1);
+        border-bottom: 3px solid var(--color-1);
+      }
+
       button {
+        margin-top: 10px;
+      }
+      @include md {
         width: 100%;
-        text-align: center;
+      }
+
+      @include xs {
+        justify-items: center;
+        h4,
+        h2 {
+          text-align: center;
+        }
+        p {
+          text-align: justify;
+        }
+        button {
+          width: 100%;
+          text-align: center;
+        }
       }
     }
-  }
 
-  .frame_02 {
-    // max-width: 700px;
-    // margin-left: 30px;
-    // align-self: center;
-    display: grid;
-    // padding: 30px;
-    .iframe-container {
-      border-radius: 20px;
-      position: relative;
-      width: 100%;
-      height: 0;
-      overflow: hidden;
-      padding-top: 56.25%;
-      .video {
-        position: absolute;
-        top: 0;
-        left: 0;
+    .frame_02 {
+      // max-width: 700px;
+      // margin-left: 30px;
+      // align-self: center;
+      display: grid;
+      // padding: 30px;
+      .iframe-container {
+        border-radius: 20px;
+        position: relative;
         width: 100%;
-        height: 100%;
+        height: 0;
+        overflow: hidden;
+        padding-top: 56.25%;
+        .video {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
       }
     }
+
+    // .frame_02 {
+    //   // align-self: center;
+    //   height: 100%;
+    //   object-fit: contain;
+
+    //   @include md {
+    //     // height: 350px;
+    //     // width: 100%;
+    //   }
+
+    //   .video {
+    //     width: 100%;
+    //     height: 100%;
+    //     @include md {
+    //       // width: 100%;
+    //       // height: 100%;
+    //     }
+    //   }
+    // }
   }
-
-  // .frame_02 {
-  //   // align-self: center;
-  //   height: 100%;
-  //   object-fit: contain;
-
-  //   @include md {
-  //     // height: 350px;
-  //     // width: 100%;
-  //   }
-
-  //   .video {
-  //     width: 100%;
-  //     height: 100%;
-  //     @include md {
-  //       // width: 100%;
-  //       // height: 100%;
-  //     }
-  //   }
-  // }
 }
 
 // img {

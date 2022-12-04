@@ -31,5 +31,39 @@ export const HomeDataSource = {
         text02: 'To serve as a thought leader in the aerospace and security domains globally, providing thinkers and policymakers with independent, comprehensive and multifaceted insight on aerospace and security issues.',
       }
     ]
+  },
+  section04: {
+    data: [
+      {
+        imgUrl: 'https://casstt.com/wp-content/uploads/2022/11/Amb_Jilani_W2.jpg',
+        text01: 'Ambassador Jalil Abbas Jilani',
+        text02: 'Advisor (Foreign Policy)'
+      },
+      {
+        imgUrl: 'https://casstt.com/wp-content/uploads/2022/11/AM-Ashfaque1.png',
+        text01: 'Air Marshal M. Ashfaque Arain (Retd)',
+        text02: 'Advisor to CAS, PAF on CASS Affairs'
+      },
+      {
+        imgUrl: 'https://casstt.com/wp-content/uploads/2022/11/AM_Habib_2.jpg',
+        text01: 'Air Marshal Farooq Habib (Retd)',
+        text02: 'Senior Director (National Security)'
+      },
+      {
+        imgUrl: 'https://casstt.com/wp-content/uploads/2022/11/AVM-Faheem1.png',
+        text01: 'Air Vice Marshal Faheem Ullah Malik (Retd)',
+        text02: 'Director (Warfare & Aerospace)'
+      },
+      {
+        imgUrl: 'https://casstt.com/wp-content/uploads/2022/11/Dr._Shamsi_.jpg',
+        text01: 'Dr Zia Ul Haque Shamsi',
+        text02: 'Director (Peace & Conflict Study)'
+      },
+      {
+        imgUrl: 'https://casstt.com/wp-content/uploads/2022/11/Dr_Usman1.jpg',
+        text01: 'Dr. Usman W Chohan',
+        text02: 'Director (Econ. Affairs & National Security)'
+      },
+    ]
   }
 }
