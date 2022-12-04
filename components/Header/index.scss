@@ -260,6 +260,17 @@
       //z-index: 1;
       // position: relative;
 
+      // background: -webkit-gradient(linear, left bottom, left top, from(var(--color-dark)), to(var(--color-dark)))
+      //   no-repeat 100% 100%/0 2px;
+      // background: linear-gradient(0deg, var(--color-dark), var(--color-dark)) no-repeat 100% 100%/0 2px;
+      // -webkit-transition: background-size 350ms;
+      // transition: background-size 350ms;
+      // background-position: 100% 90%;
+      // &:where(:hover, :focus-visible) {
+      //   background-size: 100% 2px;
+      //   background-position-x: left;
+      // }
+
       &.nested ul.menu-list {
         // .menu-sub-list{
         // flex: 1;
@@ -272,23 +283,32 @@
       > button {
         padding: 15px 20px;
 
+        &.active {
+          &:before {
+            clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+          }
+        }
+
         &:before {
           transition: var(--transition);
-          clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+          // clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+          clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
           bottom: 0px;
           box-sizing: border-box;
           content: "";
-          height: 8px;
+          height: 5px;
           position: absolute;
           visibility: visible;
           width: calc(100% - 30px);
           background-repeat: no-repeat;
-          background-size: 100%;
+          // background-size: 100%;
+          // background-position: right;
+          // background-size: 0%;
+          // clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
           @extend .h-center-abs;
           background-color: var(--c-dark);
           mask-image: url("https://raw.githubusercontent.com/MohsinEjaz21/next-static-export-menu/main/public/assets/icons/underline.svg");
           // object-fit: scale-down;
-          // clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
           // background-image: url("/assets/icons/underline.svg");
           // background-image: url("https://raw.githubusercontent.com/MohsinEjaz21/next-static-export-menu/main/public/assets/icons/underline.svg");
           // @include recolor(black, 100%);
@@ -314,6 +334,7 @@
           &:before {
             -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            // clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
           }
           > .arrow-bottom {
             transform: rotate(225deg) translateX(-5px);
