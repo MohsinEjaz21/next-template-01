@@ -5,7 +5,7 @@ const data = HomeDataSource.section03.data;
 function Section_03() {
   return (
     // custom-theme="dark"
-    <section className="section_03"  >
+    <section className="section_03" custom-theme="dark" >
       <h2 className="heading">Our Role</h2>
       <div className="container">
         {data.map(e => (

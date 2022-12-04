@@ -1,4 +1,5 @@
 .section_03 {
+  height: 80vh;
   @extend .full_bg;
   padding-bottom: 100px;
   .heading {
@@ -6,7 +7,7 @@
     width: max-content;
     border-bottom: 3px solid var(--color-1);
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     font-weight: 500;
   }
   .container {

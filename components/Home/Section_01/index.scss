@@ -2,7 +2,6 @@
   // height: 100vh;
   .background {
     position: absolute;
-    background-color: red;
     width: 300px;
   }
   .container {
@@ -28,7 +27,7 @@
       align-content: center;
       // margin: 0 auto;
       padding: 20px;
-      gap: 1rem;
+      gap: 2rem;
       max-width: 650px;
       justify-items: start;
 
@@ -44,7 +43,7 @@
       }
 
       button {
-        margin-top: 10px;
+        margin-top: 30px;
       }
       @include md {
         width: 100%;
