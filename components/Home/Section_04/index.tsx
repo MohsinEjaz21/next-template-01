@@ -15,7 +15,7 @@ function Section_04() {
             <SwiperSlide key={i} className="curr_slide" >
               <img src={e.imgUrl} />
               <div className="content">
-                <h4>{e.text01}</h4>
+                <h5>{e.text01}</h5>
                 <p>{e.text02}</p>
               </div>
             </SwiperSlide>

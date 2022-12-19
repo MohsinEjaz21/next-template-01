@@ -4,6 +4,8 @@
   p {
     color: var(--color-2);
   }
+
+  // max-width: 1000px;
   .heading {
     padding-bottom: 5px;
     width: max-content;
@@ -12,13 +14,45 @@
     margin-bottom: 50px;
     font-weight: 500;
   }
+  .tagline {
+    // text-align: center;
+    text-align: justify;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .publication_item {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 5px;
+    overflow: hidden;
+    // background-color: #0d182c;
+    max-width: 350px;
+    img {
+      min-height: 300px;
+      width: 100%;
+    }
+    .content {
+      padding: 20px 10px;
+      * {
+        padding: 5px 0;
+        // color: white;
+        opacity: 0.75;
+      }
+    }
+  }
+
   .container {
+    margin-top: 80px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2rem;
+
     .curr_slide {
       // min-height: 650px;
       height: 100%;
       border-radius: 10px;
       position: relative;
-      overflow: hidden;
+      // overflow: hidden;
       // background-color: #0d182c0f;
       .content {
         padding: 20px 10px;

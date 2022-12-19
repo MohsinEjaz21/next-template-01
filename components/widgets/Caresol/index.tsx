@@ -8,14 +8,14 @@ const sliderProps = {
   // onSwiper={(swiper) => console.log(swiper)}
   navigation: true,
   cssMode: true,
-  spaceBetween: 50,
-  slidesPerView: 3,
+  spaceBetween: 30,
   modules: [Navigation, Autoplay],
   // autoplay: {
   //   delay: 2500,
   //   disableOnInteraction: false,
   // },
   // Responsive breakpoints
+  slidesPerView: 4,
   breakpoints: {
     300: {
       slidesPerView: 1,
@@ -26,7 +26,7 @@ const sliderProps = {
       spaceBetween: 30
     },
     1025: {
-      slidesPerView: 3,
+      slidesPerView: 4,
       spaceBetween: 30
     }
   }
@@ -35,7 +35,7 @@ const sliderProps = {
 export function Caresol({ children }) {
   return (
     <>
-      <Swiper {...sliderProps}>
+      <Swiper {...sliderProps} >
         {children}
       </Swiper>
 

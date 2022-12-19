@@ -65,5 +65,34 @@ export const HomeDataSource = {
         text02: 'Director (Econ. Affairs & National Security)'
       },
     ]
+  },
+  section05: {
+    data: [
+      {
+        imgUrl: 'https://casstt.com/wp-content/uploads/2022/12/119-Years-of-Aerial-Age-AM-Farooq-Article-thematic-Image-Dec-300x300.jpg',
+        text01: '119 Years of Aerial Age',
+        text02: 'Air Marshal Farooq Habib  December 16, 2022',
+        text03: 'The pattern of human progress has been anything but linear.  At important junctures of history, critical discoveries, inventions and innovations tend to open up'
+
+      },
+      {
+        imgUrl: 'https://casstt.com/wp-content/uploads/2022/12/Journalism-Amna-Article-thematic-Image-Dec-a-300x300.jpg',
+        text01: 'Journalism: The Most Dangerous Profession',
+        text02: 'Amna Tauhidi  December 14, 2022',
+        text03: 'Independent media and journalism play a crucial role in the establishment of democratic and participatory societies by ensuring transparency and accountability of those in power.'
+      },
+      {
+        imgUrl: 'https://casstt.com/wp-content/uploads/2022/12/US-NSS-Ajwa-Hijazi-Article-thematic-Image-Dec-copy-2-300x300.jpg',
+        text01: 'US’ National Security Strategy 2022: What Does It Imply for Pakistan?',
+        text02: 'Senior Director (National Security)',
+        text03: 'The United States’ new National Security Strategy (NSS) was published by the White House on 12 October 2022. The document encapsulates the two-pronged global challenge for'
+      },
+      {
+        imgUrl: 'https://casstt.com/wp-content/uploads/2022/12/Fostering-Medical-Tourism-in-Pakistan-Zahra-Article-thematic-Image-Dec-copy-2-600x600.jpg',
+        text01: 'Fostering Medical Tourism in Pakistan',
+        text02: 'Senior Director (National Security)',
+        text03: 'The dividends of economic diversification for promoting economic development are beyond question. In view of this, economic diversification should be one of the priority areas for'
+      }
+    ]
   }
 }
