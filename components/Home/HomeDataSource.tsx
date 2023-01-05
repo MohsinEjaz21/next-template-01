@@ -94,5 +94,34 @@ export const HomeDataSource = {
         text03: 'The dividends of economic diversification for promoting economic development are beyond question. In view of this, economic diversification should be one of the priority areas for'
       }
     ]
+  },
+  section06: {
+    data: [
+      {
+        imgUrl: 'https://casstt.com/wp-content/uploads/2022/12/E-invite-Sem-Jinnah-15-Dec-2022-1-300x300.jpg',
+        text01: 'Muhammad Ali Jinnah: His Vision and Struggle',
+        text02: 'Air Marshal Farooq Habib  December 16, 2022',
+        text03: 'The Centre for Aerospace & Security Studies (CASS) is organising a seminar titled ‘Muhammad Ali Jinnah: His Vision and Struggle’ on 22 December 2022 at CASS, Islamabad.'
+
+      },
+      {
+        imgUrl: 'https://casstt.com/wp-content/uploads/2022/11/Sem-Inv-Rus-Ukr-APP-1-300x300.jpg',
+        text01: 'Russia-Ukraine War: A Crisis beyond Borders',
+        text02: 'Amna Tauhidi  December 14, 2022',
+        text03: 'The Russia-Ukraine war has been ongoing with full intensity for more than three months now, causing heavy losses on both sides. The significance of the current crisis lies in the fact that because of NATO’s intervention, which led to Kosovo’s independence in 1999, this is the first time that borders are being redrawn by force in Europe.'
+      },
+      {
+        imgUrl: 'https://casstt.com/wp-content/uploads/2022/11/gstar-background-mobile-1-600x600.jpg',
+        text01: 'US’ National Security Strategy 2022: What Does It Imply for Pakistan?',
+        text02: 'Senior Director (National Security)',
+        text03: 'The United States’ new National Security Strategy (NSS) was published by the White House on 12 October 2022. The document encapsulates the two-pronged global challenge for'
+      },
+      {
+        imgUrl: 'https://casstt.com/wp-content/uploads/2022/12/Fostering-Medical-Tourism-in-Pakistan-Zahra-Article-thematic-Image-Dec-copy-2-600x600.jpg',
+        text01: 'Fostering Medical Tourism in Pakistan',
+        text02: 'Senior Director (National Security)',
+        text03: 'The dividends of economic diversification for promoting economic development are beyond question. In view of this, economic diversification should be one of the priority areas for'
+      }
+    ]
   }
 }

@@ -3,6 +3,7 @@ import Section_02 from "./Section_02"
 import Section_03 from "./Section_03"
 import Section_04 from "./Section_04"
 import Section_05 from "./Section_05"
+import Section_06 from "./Section_06"
 
 function Home() {
   return (
@@ -12,7 +13,7 @@ function Home() {
       <Section_03 />
       <Section_04 />
       <Section_05 />
-
+      <Section_06 />
     </div>
   )
 }
